@@ -1,0 +1,165 @@
+/*Mario Fuentes Fernández*/
+/*Header*/
+body{   /*Le doy ancho y quito padding y margin al body*/
+    width: 1280px;
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    width: 100%;
+}
+#header>img,p{
+    float: left;
+}
+#header>p{
+    width: 84.35%;
+    font-size: xx-large;
+    text-align: center;
+}
+#header>img{
+    width: 7.81%;
+}   
+
+/*Nav*/
+nav:nth-child(2){/*Le doy ancho 1000px borde margen left y top al la barra de navegacion*/
+    width: 80%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+nav:nth-child(2)>ul{/*Le doy padding 0px a los ul de la barra de navegacion*/
+    padding:0px;
+}
+nav:nth-child(2)>ul>li{/*Le quito el estilo pongo el display a inlineblock centro el texto y pongo el ancho de los li de la barra de navegacion*/
+    list-style-type: none;
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+nav:nth-child(2)>ul>li:hover{/*Escalo los li cuando pasa el raton por encima*/
+    scale: 1.3;
+}
+a{/*Quito el formato de los enlaces de toda la pagina*/
+    text-decoration: none;
+    color: black;
+}
+
+/*ContenidoNoticias*/
+main{/*Pongo un margen de 100px por todos los lados al main*/
+    margin:100px;
+}
+main>div{/*Pongo display inlineblock redondeo de borde 15px borde y padding 50px al div del main(contenedor de las noticias)*/
+    display: inline-block;
+    border-radius: 15px;
+    border:1px solid black;
+    padding-bottom: 50px;
+    background-color: rgb(230, 230, 230);
+    width: 100%; 
+}
+main>div>img{/*Pongo el ancho y margenes a las imagenes de las noticas*/
+    width: 20%;
+    margin-top: 90px;
+    float: left;
+}
+main>div>div{/*Pongo el fondo bordes ancho margenes y padding de los divs de las noticias*/
+    background-color: white;
+    border-radius: 15px;
+    border:1px solid black;
+    width: 62%;
+    padding: 3.225%;
+    margin-left: 6%;
+    margin-right: 4%;
+    margin-top: 60px;
+    height: 300px;
+    float: left;
+}
+
+/*ContenidoImpacto*/
+main>h1{/*Pongo los titulos del main al centro*/
+    text-align: center;
+    display: block;
+}
+ol>li{/*Ajusto el tamaño de fuente de los li que esten dentro del ol*/
+    font-size: 30px;
+}
+#banner{/*Le doy tamaño a la imagen del banner*/
+    height: 250px;
+}
+table{/*Establezco el margen superior e inferior a la tabla y la centro*/
+    width: 60%;
+    margin: 100px auto;
+}
+td{/*Le doy ancho a los td*/
+    width: 25%;
+}
+span{/*Le doy color a los span(Texto importante)*/
+    color:#67910c;
+}
+#fondo{/*Pongo la imagen de fondo al main de la pagina impacto*/
+    background-image: url("img/fondo.avif");
+}
+
+/*Formulario*/
+form{/*Doy tamaño bordes y margenes a el formulario*/
+    width: 45%;
+    background-color:#CDEB8B;
+    border:2px black solid;
+    border-radius: 15px;
+    margin-left: 289px;
+    margin-top: 50px;
+}
+form>h1{/*Centro el titulo del form*/
+    text-align: center;
+    display: block;
+}
+form>div{/*Establezo el fondo ancho borde y margen de los apartados del form*/
+   background-color:white;
+   width: 80%;
+   height: auto;
+   overflow: hidden;
+   border:2px black solid;
+   border-radius: 15px;
+   margin: auto;
+   margin-bottom: 15px;
+}
+form>div:first-of-type>p{/*Le doy margen, quito el padding y cambio el display a inlineblock al primer apartado*/
+    display: inline-block;
+    width: 42%;
+ }
+form>div>p{/*Pongo padding a los p que esten dentro de los apartados del form*/
+    padding: 15px;
+}
+input[name=opinion]{/*Le doy un ancho altura y margen al input de nombre opinion*/
+    width: 95%;
+    margin: auto;
+    height: 150px;
+}
+input[type=submit]{/*Le doy un ancho altura y margen al input de tipo submit*/
+    margin-left:15px;
+    margin-bottom: 20px;
+    width:40%;
+    height: 30px;
+}
+
+/*Footer*/
+footer {/*Pongo el color de fondo el color de letra alineacion de texto y padding del footer*/
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: 30px;
+}
+footer>img {/*Pongo a la imagen del footer un display inlineblock alineacion vertical y ancho*/
+    float: left;
+    vertical-align: middle;
+    width: 4%; 
+}
+footer>p {/*Pongo a los p del footer display inlineblock alineacion vertical y margen superior e inferior*/
+    float: left;
+    vertical-align: middle;
+    margin-left: 250px;
+    margin-top: 0;
+}
+footer>p>a{/*Pongo los enlaces del footer de color blanco*/
+    color: white;
+}
